@@ -1,7 +1,9 @@
+## Recommended use case: (PLEASE READ)
+1. Windows 64Bit Server, With MAX players, With over 10 Mods, With HEAVEY script modifications.
+**Please note if your server is below what is reccomended, DO NOT INSTALL THIS, If you do and you request help we will ask you uninstall extdb3.
 ## Supported server types:
 1. Windows 32Bit, 64Bit
 2. Linux 32Bit
-
 # Exile 64bit Edition How to install FOR EXILE 1.0.4
 ## Please include both your server RPT and Extdb3 Logs when submitting an issue on the forums, USING PASTEBIN.
 ### Also Note--- We require the use OF ALL overrides I provided, without them I CANNOT provide support
