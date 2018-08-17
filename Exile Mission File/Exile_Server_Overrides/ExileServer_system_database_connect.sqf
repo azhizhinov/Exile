@@ -34,7 +34,8 @@ if ((_result select 0) isEqualTo 0) then
 {
   throw format ["Failed to initialize database protocol: %1", _result];
 };
-	ExileServerStartTime = (call compile ("extDB3" callExtension "9:LOCAL_TIME")) select 1;
+	_pulledTime = (call compile ("extDB3" callExtension "9:LOCAL_TIME")) select 1;
+	ExileServerStartTime = _pulledTime select [0,5];
 	"Database protocol initialized!" call ExileServer_util_log;
   "You are running Extdb3, If you run into issues please post on the forum under the extdb3 conversion." call ExileServer_util_log;
 	"extDB3" callExtension "9:ADD_PROTOCOL:LOG:TRADING:Exile_TradingLog";
