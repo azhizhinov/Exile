@@ -1,6 +1,6 @@
 ## Recommended use case: (PLEASE READ)
 1. Windows 64Bit Server, With MAX players, With over 5 Mods, With HEAVEY script modifications.
-**Please note if your server is below what is reccomended, DO NOT INSTALL THIS, If you do and you request help we will ask you uninstall extdb3.
+**Please note if your server is below what is recommended, DO NOT INSTALL THIS, If you do and you request help we will ask you uninstall extdb3.
 ## Supported server types:
 1. Windows 32Bit, 64Bit
 2. Linux 32Bit
@@ -37,7 +37,7 @@ It will look like this in the end:
 9. Edit the extdb3-conf.ini file, REMEMBER TO CHANGE [Default] to [exile] . Change the database information to be correct (Example: https://gyazo.com/31cb26f08f9cc4b05360915f5ed84303)
 ### Only do #10 if you are not a freshly installed exile server. 
 10. Exit the Exile.ini file to match any changes in your older exile.ini
- SIDENOTE: the new exile.ini no longer contains the lines with "Number of Inputs = #" (# is refering to any number within the file on this line)
+ SIDENOTE: the new exile.ini no longer contains the lines with "Number of Inputs = #" (# is referring to any number within the file on this line)
 11. Run the Mysql Querys in the "Exile_Database_Update_64x.sql" file to properly update your database.
 12. Boot up your server and see if it works. If it does not work then go to your logs folder and find the error code and leave a message here and I'll get to you.
 
