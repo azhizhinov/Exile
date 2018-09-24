@@ -37,7 +37,7 @@ if ((_result select 0) isEqualTo 0) then
 	_pulledTime = (call compile ("extDB3" callExtension "9:LOCAL_TIME")) select 1;
 	ExileServerStartTime = _pulledTime select [0,5];
 	"Database protocol initialized!" call ExileServer_util_log;
-  "You are running Extdb3, If you run into issues please post on the forum under the extdb3 conversion." call ExileServer_util_log;
+  	"You are running Extdb3, If you run into issues please post on the forum under the extdb3 conversion." call ExileServer_util_log;
 	"extDB3" callExtension "9:ADD_PROTOCOL:LOG:TRADING:Exile_TradingLog";
 	"extDB3" callExtension "9:ADD_PROTOCOL:LOG:DEATH:Exile_DeathLog";
 	"extDB3" callExtension "9:ADD_PROTOCOL:LOG:TERRITORY:Exile_TerritoryLog";
@@ -48,12 +48,13 @@ catch
 {
 	if (!_error_locked) then
 	{
-  "MySQL connection error!" call ExileServer_util_log;
-  "Make sure [Database] in the extdb3-conf.ini is set to [exile] unless you have a different database setup!!!!!" call ExileServer_util_log;
-  "Please have a look at @extDB3/logs/ to find out what went wrong." call ExileServer_util_log;
-  format ["MySQL Error: %1", _exception]  call ExileServer_util_log;
-  "Server will shutdown now :(" call ExileServer_util_log;
-  '#shutdown' call ExileServer_system_rcon_event_sendCommand;
+  		"MySQL connection error!" call ExileServer_util_log;
+		"HELP IM A DUMBASS!!" call ExileServer_util_log;
+ 		"Make sure [Database] in the extdb3-conf.ini is set to [exile] unless you have a different database setup!!!!!" call ExileServer_util_log;
+		"Please have a look at @extDB3/logs/ to find out what went wrong." call ExileServer_util_log;
+		format ["MySQL Error: %1", _exception]  call ExileServer_util_log;
+		"Server will shutdown now :(" call ExileServer_util_log;
+ 		'#shutdown' call ExileServer_system_rcon_event_sendCommand;
 	}
 	else
 	{
