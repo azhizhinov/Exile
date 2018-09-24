@@ -16,6 +16,7 @@ _spawnLocationMarkerName = _this select 2;
 _bambiPlayer = _this select 3;
 _accountData = _this select 4;
 _escapeEnabled = getNumber(configFile >> "CfgSettings" >> "Escape" >> "enableEscape") isEqualTo 1;
+"Bambie Was Killed by his mother, we will now create a mindless player for you." call ExileServer_util_log;
 _direction = random 360;
 if (_escapeEnabled) then 
 {
