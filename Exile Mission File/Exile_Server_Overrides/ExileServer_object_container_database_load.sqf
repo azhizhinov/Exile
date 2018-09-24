@@ -11,6 +11,7 @@
  
 private["_containerID", "_data", "_position", "_vectorDirection", "_vectorUp", "_abandoned", "_containerObject", "_cargoContainers"];
 _containerID = _this;
+"Missing Data! Container loaded partialy, we have deleted this container!" call ExileServer_util_log;
 _data = format ["loadContainer:%1", _containerID] call ExileServer_system_database_query_selectSingle;
 _position = [_data select 4, _data select 5, _data select 6];
 _vectorDirection = [_data select 7, _data select 8, _data select 9];
