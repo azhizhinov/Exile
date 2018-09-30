@@ -27,7 +27,6 @@ _player disableAI "TARGET";
 _player disableAI "CHECKVISIBLE";
 _clanID = (_data select 42);
 _clanName = (_data select 43);
-"Player Has Failed to load and has been reset to a Bambi state!" call ExileServer_util_log;
 if !((typeName _clanID) isEqualTo "SCALAR") then
 {
 	_clanID = -1;
