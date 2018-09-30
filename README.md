@@ -3,7 +3,7 @@
 **Please note if your server is below what is recommended, DO NOT INSTALL THIS, If you do and you request help we will ask you uninstall extdb3.
 ## Supported server types:
 1. Windows 32Bit, 64Bit
-# Exile 64bit Edition How to install FOR EXILE 1.0.4
+# Exile 64bit Edition Conversion
 ## Please include both your server RPT and Extdb3 Logs when submitting an issue on the forums, USING PASTEBIN.
 ### Also Note--- We require the use OF ALL overrides I provided, without them I CANNOT provide support
 1. Open your @ExileServer Folder and delete the following files : extDB2.dll , extDB2.so , extDB2-conf.ini , XM8.dll , XM8.so
