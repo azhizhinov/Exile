@@ -24,7 +24,6 @@ _constructionObject setVariable ["ExileIsPersistent", true];
 _constructionObject setVariable ["ExileTerritoryID", (_data select 15)];
 _damageLevel = (_data select 17);
 _public = _damageLevel > 0;
-"Error: Construction Loaded Just fine? Whatttt? Send Help plz!" call ExileServer_util_log;
 _constructionObject setVariable ["ExileConstructionDamage",_damageLevel,_public];
 if(_public)then
 {
