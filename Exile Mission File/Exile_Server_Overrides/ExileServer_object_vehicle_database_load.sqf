@@ -11,7 +11,6 @@
  
 private["_vehicleID", "_data", "_position", "_vectorDirection", "_vectorUp", "_pinCode", "_texture", "_vehicleObject", "_lock", "_unlockInSafeZonesAfterRestart", "_isLocked", "_hitpoints", "_cargoContainers"];
 _vehicleID = _this;
-"Vehicle Loaded without a steering wheel! We have deleted it from the DB!" call ExileServer_util_log;
 _data = format ["loadVehicle:%1", _vehicleID] call ExileServer_system_database_query_selectSingle;
 _position = [_data select 8, _data select 9, _data select 10];
 _vectorDirection = [_data select 11, _data select 12, _data select 13];
