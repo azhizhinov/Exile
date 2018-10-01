@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_victim", "_killer", "_instigator", "_countDeath", "_countKill", "_killSummary", "_killingPlayer", "_killType", "_oldVictimRespect", "_newVictimRespect", "_oldKillerRespect", "_newKillerRespect", "_unknownReasons", "_systemChat", "_modifyVictimRespect", "_respectLoss", "_perks", "_minRespectTransfer", "_respectTransfer", "_perkNames", "_killerStatsNeedUpdate", "_newKillerFrags", "_victimStatsNeedUpdate", "_newVictimDeaths", "_victimPosition"];

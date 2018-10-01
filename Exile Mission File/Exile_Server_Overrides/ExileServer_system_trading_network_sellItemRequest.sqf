@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_sessionID", "_parameters", "_itemClassName", "_quantity", "_containerType", "_containerNetID", "_playerObject", "_vehicleObject", "_sellPrice", "_playerRespect", "_playerMoney", "_noRespectItems", "_respectGain", "_logging", "_playerMoneyString", "_traderLog", "_responseCode"];
