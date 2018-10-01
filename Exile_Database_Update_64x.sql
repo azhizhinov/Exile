@@ -1,5 +1,5 @@
 /*
-The execution of this entire file is necessary, if you neglect to do so I will not provide support for you. 
+The execution of this entire file is necessary, if you neglect to do so I will not provide support for you.
 */
 SET SQL_SAFE_UPDATES=0;
 UPDATE (player) SET name = REPLACE(name, '"', '');
@@ -9,6 +9,7 @@ UPDATE (clan_map_marker) SET label = REPLACE(label, '"', '');
 UPDATE (territory) SET name = REPLACE(name, '"', '');
 ALTER TABLE `player` CHANGE COLUMN `hitpoints` `hitpoints` VARCHAR(1024) NOT NULL DEFAULT '[]' ;
 ALTER TABLE `player` DROP PRIMARY KEY, ADD PRIMARY KEY (`id`, `account_uid`);
+ALTER TABLE `player` CHANGE COLUMN `assigned_items` `assigned_items` TEXT CHARACTER SET 'utf8' NULL DEFAULT '[]' ;
 ALTER TABLE `vehicle`
 CHANGE COLUMN `hitpoints` `hitpoints` TEXT NULL ,
 CHANGE COLUMN `cargo_items` `cargo_items` TEXT NULL ,
