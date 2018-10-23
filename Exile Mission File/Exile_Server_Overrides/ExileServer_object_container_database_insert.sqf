@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_containerObject","_position","_vectorDirection","_vectorUp","_territoryFlag","_territoryID","_data","_extDB2Message","_containerID","_cargoContainers"];
@@ -15,7 +16,7 @@ _position = getPosATL _containerObject;
 _vectorDirection = vectorDir _containerObject;
 _vectorUp = vectorUp _containerObject;
 _territoryFlag = _containerObject call ExileClient_util_world_getTerritoryAtPosition;
-_territoryID = if (isNull _territoryFlag) then { '' } else  { _territoryFlag getVariable ["ExileDatabaseID", '']};
+_territoryID = if (isNull _territoryFlag) then { 'NULL' } else  { _territoryFlag getVariable ["ExileDatabaseID", '']};
 if !(ExileContainerCargo isEqualTo []) then
 {
 	_data =
@@ -87,5 +88,7 @@ _containerObject addMPEventHandler ["MPKilled", { if !(isServer) exitWith {}; (_
 if(getNumber(configFile >> "CfgVehicles" >> typeOf _containerObject >> "exileIsLockable") isEqualTo 1)then
 {
 	_containerObject setVariable ["ExileIsLocked",-1,true];
+	_containerObject setVariable ["ExileHackAttempts", 0];
+	_containerObject setVariable ["ExileHackerUID", "", true];
 };
 _containerID

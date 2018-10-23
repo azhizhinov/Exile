@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_sessionID","_parameters","_vehicleNetID","_skinTextures","_playerObject","_vehicleObject","_vehicleParentClass","_salesPrice","_skinVariations","_availableSkinTexture","_playerMoney","_skinMaterials","_skinClassName","_vehicleID","_logging","_traderLog","_responseCode"];

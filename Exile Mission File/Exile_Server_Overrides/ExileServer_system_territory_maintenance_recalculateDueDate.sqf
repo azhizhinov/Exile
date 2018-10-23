@@ -7,9 +7,10 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
-private["_flag","_currentTimestamp","_flagBuild","_maintenancePeriod","_maintenancePeriodDueDate"];
+private["_flag", "_currentTimestamp", "_flagBuild", "_maintenancePeriod", "_maintenancePeriodDueDate"];
 _flag = _this;
 _currentTimestamp = call ExileServer_util_time_currentTime;
 _flagBuild = _flag getVariable ["ExileTerritoryLastPayed", _currentTimestamp];

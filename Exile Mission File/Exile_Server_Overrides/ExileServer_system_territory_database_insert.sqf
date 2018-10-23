@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_flagObject","_territoryName","_flagTexture","_territorySize","_owner","_position","_build","_moderators","_data","_extDB2Message","_territoryID"];
@@ -30,8 +31,7 @@ _data =
 	_flagTexture,
 	0,
 	_build_rights,
-	_moderators,
-	""
+	_moderators
 ];
 _extDB2Message = ["createTerritory", _data] call ExileServer_util_extDB2_createMessage;
 _territoryID = _extDB2Message call ExileServer_system_database_query_insertSingle;

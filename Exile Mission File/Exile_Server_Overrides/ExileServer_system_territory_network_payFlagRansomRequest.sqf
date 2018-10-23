@@ -7,6 +7,7 @@
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ * 64Bit Conversion File Header (Extdb3) - Validatior
  */
  
 private["_sessionID","_parameters","_flagNetID","_flag","_playerObject","_buildRights","_playerUID","_level","_itemClassName","_flagFee","_playerMoney","_logging","_databaseID","_territoryLog"];
@@ -70,7 +71,7 @@ try
 		_territoryLog = format ["PLAYER ( %1 ) %2 PAID %3 POP TABS FOR THE RANSOM OF TERRITORY #%4 | PLAYER TOTAL POP TABS: %5", _playerUID, _playerObject, _flagFee, _databaseID, _playerMoney];
 		"extDB3" callExtension format["1:TERRITORY:%1", _territoryLog];
 	};
-	[_sessionID, "toastRequest", ["SuccessTitleOnly", ["Random paid!"]]] call ExileServer_system_network_send_to;
+	[_sessionID, "toastRequest", ["SuccessTitleOnly", ["Ransom paid!"]]] call ExileServer_system_network_send_to;
 }
 catch 
 {
