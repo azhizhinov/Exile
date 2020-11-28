@@ -27,6 +27,10 @@ _killType = [_victim, _killer, _killingPlayer, _instigator] call ExileServer_uti
 _oldVictimRespect = _victim getVariable ["ExileScore", 0];
 _newVictimRespect = _oldVictimRespect;
 _oldKillerRespect = 0;
+
+//Makes the respawn bug less likely
+format["deletePlayer:%1", _victim getVariable ["ExileDatabaseId", -1]] call ExileServer_system_database_query_fireAndForget;
+
 if !(isNull _killingPlayer) then 
 {
 	_oldKillerRespect = _killingPlayer getVariable ["ExileScore", 0];
@@ -204,5 +208,4 @@ if !(_systemChat isEqualTo "") then
 };
 _victimPosition = getPos _victim;
 format["insertPlayerHistory:%1:%2:%3:%4:%5", getPlayerUID _victim, name _victim, _victimPosition select 0, _victimPosition select 1, _victimPosition select 2] call ExileServer_system_database_query_fireAndForget;
-format["deletePlayer:%1", _victim getVariable ["ExileDatabaseId", -1]] call ExileServer_system_database_query_fireAndForget;
 true
